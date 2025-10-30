@@ -1,9 +1,14 @@
 from pyrogram import Client, filters
 
-app = Client("vip_crypto_bot", bot_token="YOUR_BOT_TOKEN_HERE")
+app = Client(
+    "vip_crypto_bot",
+    api_id=24574365,
+    api_hash="519c84fdaa8c9b00043d612e98a6ff22",
+    bot_token="8489549446:AAFp4Pu-ZYVWIgHkua4lhkXWKDl6gsB1O10"  # 🔹 Replace this with your real BotFather token
+)
 
-VIP_LINK = "https://t.me/yourvipchannel"
-ADMIN_ID = 5752825610
+VIP_LINK = "https://t.me/+DWZL_Nd-sYEyZjg8"  # Replace with your real VIP channel link
+ADMIN_ID = 5752825610  # Your Telegram ID
 
 @app.on_message(filters.command("buy"))
 async def buy_crypto(client, message):
